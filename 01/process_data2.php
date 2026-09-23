@@ -13,7 +13,7 @@ $comments = $_GET['comments'] ?? '';
 <body>
     <h2>Ontvangen gegevens:</h2>
 
-    <!-- 2. De opgeslagen data tonen op het scherm -->
+    
     <table border="1" cellpadding="5">
         <tr>
             <th>Veld</th>
@@ -33,7 +33,7 @@ $comments = $_GET['comments'] ?? '';
         </tr>
         <tr>
             <td>Opmerkingen:</td>
-            <td><?php echo nl2br(htmlspecialchars($comments)); ?></td>
+            <td><?php echo htmlspecialchars($comments); ?></td>
         </tr>
     </table>
 
