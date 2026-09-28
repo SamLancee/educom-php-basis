@@ -13,9 +13,11 @@ echo ++$n. "<br>";
 
 $naam = "Sam";
 
-function hoi(){
+function hoi($naam = ""){
+
     echo "hoi". $naam;
+
 }
-begroet();
+hoi() ;
 //de $naam is niet meegegeven aan de functie, er kan dus niet worden gelezen binnenin de functie wat $naam doet
 // Je zou dit kunnen oplossen door dit of te defineren binnenin de functie. Of door het mee te geven functie hoi($naam)
