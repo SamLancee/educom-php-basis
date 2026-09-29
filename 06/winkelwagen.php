@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     // Dit had ik online gevonden om bij refreshen niet hetzelfde toe te voegen, weet niet of dit de way to go is omdat dit de exit; gebruikt
     header("Location: " . $_SERVER['PHP_SELF']);
-    exit;
+    //exit;
 }
 ?>
 <!DOCTYPE html>

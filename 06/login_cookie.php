@@ -8,13 +8,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         if (!empty($username)) {
             
-            setcookie("user_name", $username, time() + (3600), "/");
+            setcookie("user_name", $username, time() + (5), "/");
         }
     }
 
     
     if (isset($_POST["action"]) && $_POST["action"] === "logout") {
-        setcookie("user_name", "", time() + 5, "/");
+        setcookie("user_name", "", time() -(1) , "/");
     }
 
     //Ik heb refresh weer zo gedaan
@@ -49,7 +49,7 @@ $loggedInUser = $isLoggedIn ? $_COOKIE["user_name"] : "";
             
             <form method="POST">
                 <input type="hidden" name="action" value="logout">
-                <button type="submit" class="btn-logout">Uitloggen</button>
+                <button type="submit" class="btn-logout" style="">Uitloggen</button>
             </form>
 
         <?php else: ?>

@@ -1,0 +1,1 @@
+Een basis class waarin je tickets kan reserveren. En dan extend varianten waarin je classes hebt als studententickets, senioren tickets, abonnementen. 
