@@ -3,14 +3,19 @@ class Webpage {
 
     private $title;
 
-    function __construct($title = ""){
-        $this ->title = $title;
+    public function __construct($title = "") {
+        $this->title = $title;
+    }
+
+    public function showHeader() {
         ?>
-        <html>
+        <!DOCTYPE html>
+        <html lang="nl">
             <head>
-                <title><?= htmlspecialchars( $this -> title) ?> </title>
+                <meta charset="UTF-8">
+                <title><?= htmlspecialchars($this->title) ?></title>
                 <style>
-                    body{
+                    body {
                         min-height: 100vh;
                         margin: 0;
                         display: grid;
@@ -19,24 +24,22 @@ class Webpage {
                 </style>
             </head>
             <body>
-                <h1> <?= htmlspecialchars($this -> title) ?></h1>
-                <?php
-
+                <h1><?= htmlspecialchars($this->title) ?></h1>
+        <?php
     }
-    function showContent($content){
+
+    public function showContent($content) {
         echo $content;
-
     }
-    function showFooter(){
+
+    public function showFooter() {
         ?>
-        <hr>
-        <footer>
-            <p>Dit is de footer</p>
-        </footer>
-        </body>
+                <hr>
+                <footer>
+                    <p>Dit is de footer</p>
+                </footer>
+            </body>
         </html>
         <?php
-
     }
 }
-?>
