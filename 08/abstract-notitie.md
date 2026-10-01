@@ -1,0 +1,2 @@
+de class bevat code die niet daadwerkelijk gebruikt wordt. Het is meer een generieke placeholder dan een echt functie die je kunt kopieren.
+Daarom worden de extends dingen gebruikt, die vullen gemakkelijk de placeholder in en dat is precies wanneer abstract classes handig zijn. 

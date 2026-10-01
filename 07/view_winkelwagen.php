@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["auth_action"])) {
             $feedbackType = "error";
         } else {
             // Controleer of gebruikersnaam al bestaat
-            $checkStmt = $pdo->prepare("SELECT id FROM users WHERE username = ?");
+            $checkStmt = $pdo->prepare("SELECT id FROM users WHERE username = ?"); //
             $checkStmt->execute([$username]);
 
             if ($checkStmt->fetch()) {
@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["auth_action"])) {
             $stmt->execute([$username]);
             $user = $stmt->fetch();
 
-            // Verifieer of de gebruiker bestaat EN of het wachtwoord klopt met de hash
+            // Verifieer of de gebruiker bestaat EN of het wachtwoord klopt
             if ($user && $password === $user['password']) {
                 $_SESSION['user_id'] = (int)$user['id'];
                 $_SESSION['user_name'] = $user['username'];
@@ -103,7 +103,7 @@ if ($isLoggedIn && $_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["cart_a
             $userId = $_SESSION['user_id'];
 
             try {
-                $pdo->beginTransaction();
+                $pdo->beginTransaction(); //wordt pas toegevoegd bij commit
 
                 $orderStmt = $pdo->prepare("INSERT INTO orders (user_id, total_amount) VALUES (?, ?)");
                 $orderStmt->execute([$userId, $totalAmount]);

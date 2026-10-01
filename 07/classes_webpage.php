@@ -10,9 +10,9 @@ class Webpage {
     public function showHeader() {
         ?>
         <!DOCTYPE html>
-        <html lang="nl">
+        <html>
             <head>
-                <meta charset="UTF-8">
+                
                 <title><?= htmlspecialchars($this->title) ?></title>
                 <style>
                     body {
