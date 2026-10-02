@@ -1,0 +1,2 @@
+De cookie houdt de opslag in de browser. Dit is langdurig en gevoeliger voor hacking. Nu met de server wordt het opgeslagen 
+op de server in plaats van de browser. De sessie vervalt meteen wanneer de browser wordt gesloten. 
