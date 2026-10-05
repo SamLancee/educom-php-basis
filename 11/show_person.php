@@ -1,5 +1,5 @@
 <?php
-require "dbconnect.php";
+require once "dbconnect.php"; //voor 1x
 require "person.php";
 
 $db = new DBConnect();

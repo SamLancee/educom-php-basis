@@ -13,7 +13,7 @@ $options = [
 ];
 
 try {
-    $pdo = new PDO($dsn, $user, $pass, $options);
+    $pdo = new PDO($dsn, $user, $pass, $options); // nu PDO
 } catch (PDOException $e) {
     die("Kan niet verbinden met de database: " . $e->getMessage());
 }

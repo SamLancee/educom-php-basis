@@ -3,6 +3,7 @@
 class DBConnect
 {
     private PDO $connection;
+    
 
     public function __construct()
     {
@@ -24,3 +25,4 @@ class DBConnect
         return $this->connection;
     }
 }
+//$connection = new DBConnect(); //maakt hem dan 1x aan

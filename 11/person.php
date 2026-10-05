@@ -37,10 +37,9 @@ class Person
 
         
         ?>
-        <!DOCTYPE html>
-        <html lang="nl">
+        
+        <html>
         <head>
-            <meta charset="UTF-8">
             <title>Personen overzicht</title>
         </head>
         <body>
