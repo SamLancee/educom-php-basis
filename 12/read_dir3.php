@@ -46,7 +46,7 @@ if (is_dir($dir) && ($handle = opendir($dir))) {
                     //thumbnail 
                     echo "<td>
                             <a href='" . htmlspecialchars($path) . "' target='_blank'>
-                                <img src='" . htmlspecialchars($path) . "' alt='thumbnail' width='40'>
+                                <img src='" . htmlspecialchars($path) . "'  width='40'>
                             </a>
                           </td>";
                     

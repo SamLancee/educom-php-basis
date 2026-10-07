@@ -2,7 +2,7 @@
 session_start();
 
 require_once 'DBConnect.php';
-require_once 'User.class.php';
+require 'User.class.php';
 
 $db = new DBConnect();
 $user = new User($db->getConnection());

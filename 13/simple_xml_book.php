@@ -15,20 +15,22 @@ if (file_exists($xml_file)){
     }
     echo "<ul>";
     foreach ($library -> book as $book){
+        echo "<hr>";
         echo "<li>";
-        echo "Titel: " . htmlspecialchars($book->title). "<br>";
-        echo "Isbn: " . htmlspecialchars($book ->isbn). "<br>";
-        echo "Authors: ";
+        echo "<strong> Titel: </strong>" . htmlspecialchars($book->title). "<br>";
+        echo "<strong>Isbn: </strong>" . htmlspecialchars($book ->isbn). "<br>";
+        echo "<strong>Authors: </strong>";
         $author_list = [];
         foreach ($book->authors->author as $author) {
             $author_list[] = htmlspecialchars($author);
         }
-        echo implode(", ", $author_list);
-        echo "Publisher: " . htmlspecialchars($book -> publisher) . "<br>";
-        echo "Price: " . htmlspecialchars($book->price) . "<br>";
-        echo "Pubdate: " . htmlspecialchars($book->pubdate) . "<br>";
+        echo implode(", ", $author_list). "<br>";
+        echo "<strong>Publisher: </strong>" . htmlspecialchars($book -> publisher) . "<br>";
+        echo "<strong>Price: </strong>" . htmlspecialchars($book->price) . "<br>";
+        echo "<strong>Pubdate: </strong>" . htmlspecialchars($book->pubdate) . "<br>";
     }
     echo "</ul>";
+    echo "<hr>";
 
 }
 ?>

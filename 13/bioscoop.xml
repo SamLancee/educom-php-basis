@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<cinema name="Cinema Paradiso" city="Eindhoven">
+    <movie genre="Sci-Fi" min_age="12">
+        <title>Interstellar</title>
+        <director>Christopher Nolan</director>
+        <duration>169</duration>
+        <rating>8.7</rating>
+        <hall>1</hall>
+    </movie>
+    <movie genre="Animatie" min_age="6">
+        <title>Spider-Man: Across the Spider-Verse</title>
+        <director>Joaquim Dos Santos</director>
+        <duration>140</duration>
+        <rating>8.6</rating>
+        <hall>3</hall>
+    </movie>
+    <movie genre="Drama" min_age="16">
+        <title>The Godfather</title>
+        <director>Francis Ford Coppola</director>
+        <duration>175</duration>
+        <rating>9.2</rating>
+        <hall>2</hall>
+    </movie>
+    <movie genre="Actie" min_age="12">
+        <title>Dune: Part Two</title>
+        <director>Denis Villeneuve</director>
+        <duration>166</duration>
+        <rating>8.5</rating>
+        <hall>1</hall>
+    </movie>
+</cinema>

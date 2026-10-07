@@ -1,7 +1,7 @@
 <?php
 
 require_once 'DBConnect.php';
-require_once 'User.class.php';
+require 'User.class.php';
 
 $db = new DBConnect();
 $db_handle = $db->getConnection();

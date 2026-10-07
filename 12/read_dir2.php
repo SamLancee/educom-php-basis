@@ -20,7 +20,7 @@ if (is_dir($dir) && ($handle = opendir($dir))) {
             <th>Laatst gewijzigd</th>
           </tr>";
 
-    while (false !== ($entry = readdir($handle))) {
+    while (($entry = readdir($handle))) {
         
         if ($entry != "." && $entry != "..") {
             $path = $dir . $entry;
