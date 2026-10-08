@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cinema name="Cinema Paradiso" city="Eindhoven">
+<cinema name="Pathe" city="Eindhoven">
     <movie genre="Sci-Fi" min_age="12">
         <title>Interstellar</title>
         <director>Christopher Nolan</director>

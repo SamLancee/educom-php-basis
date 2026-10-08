@@ -12,7 +12,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // \s* of ? = optionele spatie
     // [a-zA-Z]{2} = 2 letters (hoofd- of klein)
     // $        = einde van de regel
-    $pattern = '/^[0-9]{4}\s?[a-zA-Z]{2}$/';
+    $pattern = '/^[1-9]{1}[0-9]{3}\s?[a-zA-Z]{2}$/';
+    // eerste getal mag geen 1 zijn!
 
     if (preg_match($pattern, $zipcode)) {
         $message = "Geldige postcode: " . htmlspecialchars($zipcode);
@@ -24,9 +25,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 <!DOCTYPE html>
-<html lang="nl">
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>Postcode Check</title>
 </head>
 <body>
