@@ -1,0 +1,2 @@
+het kan zijn dat verschillende mensen andere betekenissen hebben wat precies in de model/controller thuis hoort. 
+Ik denk met duidelijke afspraken wat in welke class thuis hoort dat het best te doen is. 

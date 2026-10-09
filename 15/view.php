@@ -3,10 +3,9 @@
 class UserView {
     public function render(array $users): void {
         ?>
-        <!DOCTYPE html>
-        <html lang="nl">
+        <!DOCTYPE>
+        <html>
         <head>
-            <meta charset="UTF-8">
             <title>Gebruikersoverzicht (MVC)</title>
         </head>
         <body>
@@ -14,8 +13,8 @@ class UserView {
             <ul>
                 <?php foreach ($users as $user): ?>
                     <li>
-                        <strong><?= htmlspecialchars($user['naam']) ?></strong> 
-                        (<?= htmlspecialchars($user['rol']) ?>)
+                        <strong><?= htmlspecialchars($user['naam']) ?>: </strong> 
+                        <?= htmlspecialchars($user['rol']) ?>
                     </li>
                 <?php endforeach; ?>
             </ul>
